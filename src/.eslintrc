@@ -1,0 +1,138 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["react-app", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module", // Allows for the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Allows for the parsing of JSX
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "react/prop-types": "off",
+    "react/no-array-index-key": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react/function-component-definition": 0,
+    "react/destructuring-assignment": "warn",
+    "react/jsx-no-useless-fragment": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default": "warn",
+    "no-nested-ternary": "warn",
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-bitwise": "warn",
+    "no-plusplus": [
+      "warn",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "camelcase": "warn",
+    "no-shadow": 0,
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": true,
+        "ignorePropertyModificationsForRegex": [
+          "^state",
+          "fields",
+          "acc"
+        ]
+      }
+    ],
+    "max-len": "off",
+    "object-curly-newline": "off",
+    "linebreak-style": "off",
+    "no-unsafe-optional-chaining": "warn",
+    "prefer-promise-reject-errors": "warn",
+    "consistent-return": "off",
+    "no-sequences": "warn",
+    "no-func-assign": "warn",
+    "no-use-before-define": "off",
+    "no-empty-pattern": "warn",
+    "no-restricted-syntax": "warn",
+    "func-style": [
+      "warn",
+      "expression"
+    ],
+    "arrow-body-style": "off",
+    "no-unused-vars": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "import/no-extraneous-dependencies": "warn",
+    "react/jsx-no-duplicate-props": "warn",
+    "react/forbid-prop-types": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "react/button-has-type": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "import/no-named-as-default-member": "warn",
+    "no-restricted-globals": "warn",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "default-param-last": "warn",
+    "func-names": 0,
+    "no-case-declarations": "warn",
+    "react/sort-comp": "warn",
+    "no-return-assign": "warn",
+    "no-prototype-builtins": "warn",
+    "radix": "warn",
+    "react/require-default-props": "warn",
+    "no-underscore-dangle": "warn",
+    "react/no-unused-state": "warn",
+    "react/no-access-state-in-setstate": "warn",
+    "import/order": "warn",
+    "react/no-this-in-sfc": "warn",
+    "prefer-destructuring": "warn",
+    "global-require": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/control-has-associated-label": "warn",
+    "react/jsx-no-bind": 0,
+    "eqeqeq": "warn",
+    "react/no-unused-prop-types": "warn",
+    "import/no-mutable-exports": "warn",
+    "no-undef": "warn",
+    "no-restricted-exports": "warn",
+    "jsx-a11y/mouse-events-have-key-events": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-use-before-define": ["warn"],
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ]
+  }
+}
