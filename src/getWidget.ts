@@ -1,7 +1,7 @@
 import { messages } from "./messages";
 
 const getWidget = () => {
-  return new Promise((resolve) => setTimeout(resolve, 1)).then(() => {
+  return new Promise((resolve) => setTimeout(resolve, 5000)).then(() => {
     const randomNum = Math.floor(Math.random() * 10);
 
     if (randomNum >= 4) {
